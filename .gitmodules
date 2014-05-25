@@ -1,0 +1,3 @@
+[submodule "premios"]
+	path = premios
+	url = http://github.com/BarcampSPS/Barcamp-SPS-Prize-App.git
