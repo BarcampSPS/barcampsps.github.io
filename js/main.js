@@ -134,6 +134,17 @@
                 navigation : false
             });
 
+            var owl = $("#carousel2");
+            owl.owlCarousel({
+                itemsCustom : [
+                    [1200, 4],
+                    [970, 3],
+                    [768, 2],
+                    [360, 1]
+                ],
+                navigation : false
+            });
+
             $(".next").click(function () {
                 owl.trigger('owl.next');
             });
