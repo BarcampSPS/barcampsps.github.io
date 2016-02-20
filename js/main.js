@@ -36,13 +36,12 @@
                         panControlOptions: {
                             position: google.maps.ControlPosition.RIGHT_CENTER
                         },
-                        zoomControl: true,
                         zoomControlOptions: {
                             style: google.maps.ZoomControlStyle.LARGE,
                             position: google.maps.ControlPosition.LEFT_CENTER
                         },
-                        mapTypeControl: false
-
+                        mapTypeControl: false,
+                        scrollwheel: false
                     }
                 },
                 infowindow: {
