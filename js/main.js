@@ -36,13 +36,12 @@
                         panControlOptions: {
                             position: google.maps.ControlPosition.RIGHT_CENTER
                         },
-                        zoomControl: true,
                         zoomControlOptions: {
                             style: google.maps.ZoomControlStyle.LARGE,
                             position: google.maps.ControlPosition.LEFT_CENTER
                         },
-                        mapTypeControl: false
-
+                        mapTypeControl: false,
+                        scrollwheel: false
                     }
                 },
                 infowindow: {
@@ -125,6 +124,17 @@
         // Owl Carousel
         Carousel: function () {
             var owl = $("#carousel");
+            owl.owlCarousel({
+                itemsCustom : [
+                    [1200, 4],
+                    [970, 3],
+                    [768, 2],
+                    [360, 1]
+                ],
+                navigation : false
+            });
+
+            var owl = $("#carousel2");
             owl.owlCarousel({
                 itemsCustom : [
                     [1200, 4],
